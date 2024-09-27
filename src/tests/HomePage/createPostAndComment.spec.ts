@@ -1,8 +1,8 @@
 import { test } from '@playwright/test';
-import { LoginPage } from '../pageObjects/pages/LoginPage';
-import { HomePage } from '../pageObjects/pages/HomePage/HomePage';
-import { SideMenuPage } from '../pageObjects/pages/HomePage/SideMenuPage';
-import { ManageOrgDataPage } from '../pageObjects/pages/HomePage/SideMenuPage/ManageOrgDataPage';
+import { LoginPage } from '../../pageObjects/pages/LoginPage';
+import { HomePage } from '../../pageObjects/pages/HomePage/HomePage';
+import { SideMenuPage } from '../../pageObjects/pages/HomePage/SideMenuPage';
+import { ManageOrgDataPage } from '../../pageObjects/pages/HomePage/SideMenuPage/ManageOrgDataPage';
 
 test.beforeEach('[ TestCaseID ] - Before each test runs', async ({ page }) => {
   // 📦 Calling LoginPage > LoginComponent

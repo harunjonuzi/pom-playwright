@@ -1,10 +1,10 @@
 # Introduction
 
-This repository provides a framework for end-to-end UI testing using [Playwright](https://playwright.dev/) with [TypeScript](https://www.typescriptlang.org/). It is structured around the Page Object Model (PoM) pattern, promoting clean and maintainable test code. Designed for developers and QA engineers, this setup ensures efficient test automation and seamless integration with CI pipelines.
+This repository provides a framework for end-to-end UI testing using [Playwright](https://playwright.dev/) with [TypeScript](https://www.typescriptlang.org/). It is structured around the Page Object Model (PoM) pattern, promoting clean and maintainable test code. Designed for QE engineers, this setup ensures efficient test automation and seamless integration with CI pipelines.
 
-# Getting Started
+# Installation
 
-First, clone the repo:
+First, clone the repo and navigate inside the directory:
 
 ```terminal
 git clone <repo-url>
@@ -19,14 +19,15 @@ npm install
 yarn install
 ```
 
-# Run the test
+# Running the Tests
 
 ```terminal
-env USERNAME="harunjonuzi@outlook.com" PASSWORD="vythnmwhaz1" npm run test tests/feedTest.spec.ts
+env USERNAME="harunjonuzi@outlook.com" PASSWORD="vythnmwhaz1" npm run test tests/HomePage/createPostAndComment.spec.ts
 ```
 
-# Current configuration settings
+# Additional Tools
 
-- Fullscreen size
-- Headed
--
+- [Prettier](https://prettier.io/docs/en/install)
+- [Husky](https://github.com/typicode/husky)
+- [ESLint](https://eslint.org/docs/latest/use/getting-started)
+- [CommitLint](https://commitlint.js.org/)

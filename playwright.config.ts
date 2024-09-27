@@ -16,7 +16,7 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './src/tests',
+  testDir: './src/tests/',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -50,6 +50,8 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         headless: false,
+
+        // 📝 Below settings serve for running tests in Maximized Window
         deviceScaleFactor: undefined,
         // viewport: { width: 1080, height: 1920 },
         viewport: null,
