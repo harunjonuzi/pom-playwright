@@ -19,7 +19,7 @@ npm install
 yarn install
 ```
 
-# Running the Tests
+# Running Tests
 
 ```terminal
 env USERNAME="harunjonuzi@outlook.com" PASSWORD="vythnmwhaz1" npm run test tests/HomePage/createPostAndComment.spec.ts
